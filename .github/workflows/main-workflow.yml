@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: gcc -Wall -Wextra -o testchecker .\BatteryTestModule.c .\ut_BMS.c .\TestMain.c
+      run: gcc -Wall -Wextra -o testchecker BatteryTestModule.c ut_BMS.c TestMain.c
       
     - name: run
       run: ./testchecker
