@@ -15,5 +15,5 @@ int main() {
   isBatteryNOTOKonCondition (GREATER_THAN (MAXIMUM_TEMPERATURE),  OPTIMUM_CHARGESTATE               , OPTIMUM_CHARGERATE);                //temperature upper threshold 
   isBatteryNOTOKonCondition (OPTIMUM_TEMPERATURE               ,  LESS_THAN    (MINIMUM_CHARGESTATE), OPTIMUM_CHARGERATE);                //charge state lower threshold
   isBatteryNOTOKonCondition (OPTIMUM_TEMPERATURE               ,  GREATER_THAN (MAXIMUM_CHARGESTATE), OPTIMUM_CHARGERATE);                //charge state upper threshold
-  isBatteryNOTOKonCondition (OPTIMUM_TEMPERATURE-              ,  OPTIMUM_CHARGESTATE               , GREATER_THAN (MAXIMUM_CHARGERATE)); //charge rate upper threshold*/
+  isBatteryNOTOKonCondition (OPTIMUM_TEMPERATURE               ,  OPTIMUM_CHARGESTATE               , GREATER_THAN (MAXIMUM_CHARGERATE)); //charge rate upper threshold
 }
