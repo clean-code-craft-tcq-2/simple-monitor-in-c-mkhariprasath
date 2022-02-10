@@ -27,9 +27,9 @@
 #define LESS_THAN(x)    (x - 0.1f)
 #define GREATER_THAN(x) (x + 0.1f)
 
-#define BATTERY_STATUS ( (batteryTemperature(temperature)) AND (batteryChargeState(chargeState))  AND (batteryChargeRate(chargeRate)) )
+#define BATTERY_STATUS ( (isBatteryTemperatureOK(temperature)) AND (isBatteryChargeStateOK(chargeState))  AND (isBatteryChargeRateOK(chargeRate)) )
 
 void printOutofRange(const char * problematicParameter);
-bool batteryTemperature(float temperature);
-bool batteryChargeState(float soc);
-bool batteryChargeRate(float chargeRate);
+bool isBatteryTemperatureOK(float temperature);
+bool isBatteryChargeStateOK(float soc);
+bool isBatteryChargeRateOK(float chargeRate);
