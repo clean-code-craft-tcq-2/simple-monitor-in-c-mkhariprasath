@@ -6,7 +6,7 @@ void printOutofRange(const char * problematicParameter)
 	
 }
 
-bool batteryTemperature(float temperature)
+bool isBatteryTemperatureOK(float temperature)
 {
     
 	if( (temperature IS_LESS_THAN MINIMUM_TEMPERATURE) OR (temperature IS_GREATER_THAN MAXIMUM_TEMPERATURE) ) 
@@ -19,7 +19,7 @@ bool batteryTemperature(float temperature)
   
 }
 
-bool batteryChargeState(float soc)
+bool isBatteryChargeStateOK(float soc)
 {
 	if ( (soc IS_LESS_THAN MINIMUM_CHARGESTATE) OR (soc IS_GREATER_THAN MAXIMUM_CHARGESTATE) )
 	{
@@ -30,7 +30,7 @@ bool batteryChargeState(float soc)
 		return OK;
 }
 
-bool batteryChargeRate(float chargeRate)
+bool isBatteryChargeRateOK(float chargeRate)
 {
 	if(chargeRate IS_GREATER_THAN MAXIMUM_CHARGERATE)
 	{
