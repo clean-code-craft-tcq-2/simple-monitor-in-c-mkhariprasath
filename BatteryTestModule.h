@@ -20,8 +20,7 @@
 #define ERROR           -1
 #define AND 	        &&
 #define OR              ||
-#define IS_LESS_THAN    <
-#define IS_GREATER_THAN >
+
 #define AND 	        &&
 #define OR              ||
 #define LESS_THAN(x)    (x - 0.1f)
